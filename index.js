@@ -1,30 +1,24 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const path = require('path');
-const bodyParser = require('body-parser')
-const routing = require('./backend/routes');
-const port = process.env.PORT || 5001;
-require('./backend/BDD/connexion');
 
-exports.app= app;
+const path = require("path");
+const logger = require("morgan");
+const cors = require("cors");
 
-
-
-require('./backend/config/session.config');
-require('./backend/config/passport.config');
-
-
-
+app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
-app.use(routing);
+app.use(cors());
 
-app.use(express.static(path.join(__dirname, "./frontend/build")));
+app.use("/api/test", (req,res)=>{
+    res.send("test");
+});
+
+app.use(express.static(path.join(__dirname, "./front/build")));
+
 app.get("*",function(_, res){
     res.sendFile(
-        path.join(__dirname, "./frontend/build/index.html"),
+        path.join(__dirname, "./front/build:index.html"),
         function(err){
             if(err){
                 res.status(500).send(err);
@@ -33,6 +27,7 @@ app.get("*",function(_, res){
     )
 });
 
-app.listen(port, ()=>console.log(`Server Runing on port ${port}`));
+const port = process.env.PORT || 5001;
+app.listen(port, ()=> console.log(`Server Running on port ${port}`));
 
 module.exports = app;
