@@ -1,0 +1,117 @@
+/*dashboard*/
+.bloc-content{
+    background-color:#F2FAFF;
+    padding:5px;
+    border-radius:10px;
+    box-shadow:0px 3px 15px -4px rgba(0,0,0,0.7)
+}
+.row-content{
+    padding:20px 0px;
+}
+.header-content{
+    margin-top:30px;
+}
+.bloc-content h5{
+    text-align:center;
+}
+.card-dashboard{
+    background-color:#F2FAFF;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0px 3px 15px -4px rgba(0,0,0,0.7);
+
+}
+.note-content{
+    margin-top:20px;
+    min-height:330px;
+    overflow: scroll;
+}
+@media(min-width:1910px){
+    .note-content{
+        min-height:387px;
+    }
+}
+.note-content.card-dashboard .row{
+    width:100%;
+    border-bottom:1px solid rgba(58, 62, 74,.3)
+}
+.icon-content-note-dash{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+
+}
+.title-bloc-dash{
+    font-size:16px;
+    color:rgba(58, 62, 74,1);
+    margin:5px 0px;
+}
+.subtitle-bloc-dash{
+    font-size:12px;
+    margin-top:-5px;
+    color:rgba(77, 77, 77, 0.575);
+}
+.text-bloc-dash{
+    font-size:20px;
+    font-weight:bold;
+    color:#B832A2;
+}
+.note-bloc-form{
+    display:flex;
+    flex-direction:column;
+}
+.note-bloc-form input, .note-bloc-form textarea{
+    border-radius:5px;
+    border:1px solid rgba(96, 186, 237,1);
+    background-color: transparent;
+}
+.btn-form-note{
+    display:block;
+    margin: 10px auto 0px auto;
+    background-color: #B832A2;
+    border-radius:5px;
+    border:none;
+    color:white;
+    padding:5px 10px;
+    transition:all .1s ease-in-out;
+}
+.btn-form-note:hover{
+    transform:scale(1.1);
+    transition:all .1s ease-in-out;
+}
+
+
+
+/* réglages résultat du formulaire note (map) */
+.date-note{
+    font-size:10px;
+    margin-top:5px;
+}
+
+.title-note{
+    color:#B832A2;
+    font-size:14px;
+}
+.title-note-check{
+    color:rgb(48, 185, 48);
+    font-size:14px;
+}
+.message-note{
+    color:rgba(77, 77, 77, 0.775);
+    font-size:12px;
+}
+.btn-note{
+    background-color: transparent;
+    margin-top:-10px;
+    border:none;
+    transition:all .2s ease-in-out;
+}
+.btn-note:hover{
+    transition:all .2s ease-in-out;
+    transform:scale(1.4);
+    color:green;
+}
+
+.chart-dashboard{
+    margin-top:20px;
+}

@@ -1,0 +1,43 @@
+
+.navbar-verti{
+    background-color:#3A3E4A;
+    position:fixed;
+    width:inherit;
+    height:100%;
+}
+.navbar-content img{
+    margin:50px 0px 0px 50px;
+    height:100px;
+}
+
+.navbar-nav{
+    margin-top:50px;
+    padding:0;
+}
+.navbar-nav .nav-item .nav-link{
+    color:white;
+    margin-left:20px;
+}
+.navbar-nav .nav-item{
+    transition:all .1s ease-in-out;
+    margin:10px 0px;
+}
+.navbar-nav .nav-item.active{
+    background-color:#B832A2;
+}
+.navbar-nav .nav-item:hover{
+    background-color:#B832A2;
+    transition:all .1s ease-in-out;
+}
+
+.nav-link svg{
+   margin:10px;
+}
+.navbar-nav .nav-item button{
+    background-color: transparent;
+    border:none;
+}
+.navbar-nav .nav-item button a{
+    color:white;
+    text-decoration: none;
+}

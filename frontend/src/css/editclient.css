@@ -1,0 +1,18 @@
+.form-content-edit{
+    margin-top:40px;
+}
+.stop-modify-button{
+    background-color: #B832A2;
+border: none;
+border-radius: 5px;
+color: white;
+font-size: 14px;
+padding: 13px 10px;
+text-decoration: none;
+}
+.stop-modify-button:hover{
+color:white;
+}
+.stop-modify-button:active{
+    background-color: #7c216d;
+}

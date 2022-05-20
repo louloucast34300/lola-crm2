@@ -1,0 +1,127 @@
+p{
+    font-size:12px;
+}
+.view-pdf{
+    width:21cm;
+   /* height:29.7cm;*/
+   height:auto;
+    border:1px solid white;
+    background-color: white;
+
+}
+.first-content,.second-content{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:50px;
+}
+
+.first-content img{width:130px;margin-top:-20px;}
+
+.second-content .destinataire{margin-right:100px;}
+.second-content .destinataire p span{font-size:20px;font-weight: bold;}
+.second-content .expediteur p span{font-size:16px;font-weight:bold;}
+
+.third-content{
+    text-align:center;
+}
+.third-content h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+.flex-title-table{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(58, 62, 74,1);
+
+}
+.flex-title-table p{
+    color:white;
+    margin:10px;
+}
+table th {
+    width: auto !important;
+}
+.five-content{
+    margin-top:30px;
+    width:50%;
+    margin-left:50%;
+}
+.total-price-presta{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.total-price-presta.line-top{
+    border-top: 2px solid black;
+    font-weight: bold;
+}
+.total-price-presta.line-top p{
+    font-size:16px;
+}
+
+
+/* SIX CONTENT - LE DERRIÈRE */
+.declaration,.identification{
+    border:2px solid black;
+    padding:30px;
+}
+.identification{
+    margin-top:30px;
+}
+
+.identifcation-detail-1{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+}
+.identifcation-detail-1 div{
+    font-size:12px;
+}
+.six-content{
+    background-color:white;
+}
+.six-content .declaration-title{
+    text-align: center;
+}
+.six-content .declaration-title p:first-of-type{
+    font-size:18px;
+}
+.six-content .laboratoire-detail-1{
+    background-color: rgb(211, 209, 209);
+    padding:20px;
+    border:1px solid black;
+    border-radius:10px;
+}
+.six-content .laboratoire-detail-1 p{
+    text-align: center;
+}
+.four-content{
+    margin-top:40px;
+}
+@media all {
+    .page-break {
+      display: none;
+    }
+  }
+  
+  @media print {
+    html, body {
+      height: initial !important;
+      overflow: initial !important;
+      -webkit-print-color-adjust: exact;
+    }
+  }
+  @media print {
+    .page-break {
+      margin-top: 1000px;
+      display: block;
+      page-break-before: auto;
+    }
+  }
+  @page {
+    size: auto;
+    margin: 20mm;
+  }
